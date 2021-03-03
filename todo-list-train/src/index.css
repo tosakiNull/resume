@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16pt;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.todo-app {
+  width: 80%;
+  text-align: center;
+  margin: 20pt auto;
+  /* border: solid; */
+}
+.todo-tab {
+  width: 100%;
+  text-align: center;
+}
+.todo-tab-item {
+  display: inline-block;
+  max-width: 33%;
+  width: 20%;
+  border: solid 1px #ce5a0d;
+  margin: 0 2pt;
+  padding: 5pt;
+}
+.todo-tab-item h2 {
+  margin: 0;
+}
+.todo-tab-item span {
+  display: block;
+}
+.todo-add {
+  margin-top: 20pt;
+  margin-bottom: 20pt;
+  /* border: solid; */
+}
+.todo-add input {
+  height: 25pt;
+  width: 40%;
+}
+.todo-add button {
+  margin-left: 5pt;
+  background-color: green;
+  color: #fff;
+  height: 28pt;
+  width: 40pt;
+  border-style: none;
+}
+.todo-list {
+  /* border: solid; */
+}
+.list-item {
+  border: solid 1px #ccc;
+  width: 65%;
+  height: 30pt;
+  margin: 5pt auto;
+  line-height: 25pt;
+  padding: 5pt;
+}
+.list-item div {
+  display: inline-block;
+}
+.list-item .title {
+  width: 70%;
+  text-align: left;
+}
+.list-item .group-btn {
+  width: 15%;
+  text-align: right;
+}
+.list-item .check-btn {
+  width: 5%;
+  text-align: left;
+}
+.list-item .check-btn input {
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  padding: 10px;
+}
+.list-item button {
+  font-size: 13pt;
+  border-style: none;
+  border: solid 1px #ccc;
+  margin: 1pt 2pt;
+}
+.list-item button:first-child {
+  background-color: rgb(21, 180, 21);
+  color: #fff;
+}
+.list-item button:last-child {
+  background-color: rgb(165, 10, 10);
+  color: #fff;
+}
+.list-item.completed {
+  opacity: 0.4;
+}
