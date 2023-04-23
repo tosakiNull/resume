@@ -1,13 +1,25 @@
+<script setup lang="ts">
+import { useDomainConfStore } from 'Stores/useDomainConf';
+const domainConfStore = useDomainConfStore();
+
+function switchMenu() {
+    domainConfStore.switchSideBar();
+}
+</script>
 <template>
-    <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-        <div class="px-3 py-3 lg:px-5 lg:pl-3">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center justify-start">
-                    <a href="#" class="flex ml-2 md:mr-24">
-                        Home
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
+<nav id="header-bar">
+    Home
+    <button
+        type="button"
+        @click="switchMenu"
+    >
+        click
+    </button>
+</nav>
 </template>
+<style scoped>
+#header-bar {
+    width: 100%;
+    height: 20%;
+}
+</style>

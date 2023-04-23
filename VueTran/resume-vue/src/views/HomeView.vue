@@ -1,18 +1,20 @@
 <script setup lang="ts">
-import HeaderBar from 'Components/HeaderBar.vue';
 import MainBoard from 'Components/MainBoard.vue';
-import ProjectCard from 'Components/ProjectCard.vue';
-import SideBar from 'Components/SideBar.vue';
+import ProjectList from 'Components/ProjectList/ProjectList.vue';
 </script>
 
 <template>
-  <HeaderBar />
-  <SideBar />
-  <main>
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+  <main id="main">
     <MainBoard />
-    <ProjectCard />
+    <ProjectList />
   </main>
 </template>
+
+<style scoped>
+#main {
+  background-color: aqua;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+</style>
